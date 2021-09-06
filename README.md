@@ -8,8 +8,8 @@ C'est un un code qui répond aux besoins fonctionnels, compréhensible, ouvert a
 # Getting Started
 
 ```bash
-$ git clone https://github.com/hassanrobleh/Design_pattern-template-method.git
-$ cd Design_pattern-Adapter
+$ git clone https://github.com/hassanrobleh/kata_clean-code.git
+$ cd Kata_clean-code
 $ npm install
 $ npm run test
 
