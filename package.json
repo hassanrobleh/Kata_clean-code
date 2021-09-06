@@ -1,0 +1,18 @@
+{
+  "name": "appliquer-le-clean-code-au-quotidien",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Rabbits.test.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/preset-env": "^7.14.8",
+    "jest": "^27.0.6"
+  },
+  "scripts": {
+    "test": "jest --watchAll --detectOpenHandles --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

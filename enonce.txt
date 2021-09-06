@@ -1,0 +1,129 @@
+1 petit lapin blanc sautant sue le chemin rencontre 
+1 autre petit lapin blanc
+2 petits lapins blanc sont devenus copains.
+
+2 petits lapin blanc sautant sue le chemin rencontre 
+1 autre petit lapin blanc
+3 petits lapins blanc sont devenus copains.
+
+3 petits lapin blanc sautant sue le chemin rencontre 
+1 autre petit lapin blanc
+4 petits lapins blanc sont devenus copains.
+
+4 petits lapin blanc sautant sue le chemin rencontre 
+1 autre petit lapin blanc
+5 petits lapins blanc sont devenus copains.
+
+5 petits lapin blanc sautant sue le chemin rencontre 
+1 autre petit lapin blanc
+6 petits lapins blanc sont devenus copains.
+
+6 petits lapin blanc sautant sue le chemin rencontre 
+1 autre petit lapin blanc
+7 petits lapins blanc sont devenus copains.
+
+7 petits lapin blanc sautant sue le chemin rencontre 
+1 autre petit lapin blanc
+8 doigts avec mes mains, pour compter les petis lapins blancs.
+
+1. Faire en sorte que notre programe retourne cette suite de phrases.
+
+2.Verser 2 ajouter les lapins sont gris.
+
+2. Verser 5 ajouter une nouvelles couleurs bleu
+
+3. Nouveau besoin les enfant aimerait apprendre les animaux
+   verser 3 des lions
+   rabbits-meeting en animal meetings 
+
+4. verser 6 des oiseaux, 
+   remplacer sautant par volant au dessus du chemin
+   extraire un concept
+
+
+import { AnimalsSong } from "./math";
+
+
+
+describe("Animals", () => {
+  xit("verse 1", () => {
+   expect(AnimalsSong().verse(1)).toEqual(`1 petit lapin blanc sautant sur le chemin 
+rencontre 1 autre petit lapin blanc
+2 petits lapins blanc sont devenus copains.
+`);
+  });
+});
+
+describe("Animals", () => {
+  xit("verse 2", () => {
+   expect(AnimalsSong().verse(2)).toEqual(`2 petit lapin blanc sautant sur le chemin 
+rencontrent 1 autre petit lapin blanc
+3 petits lapins blanc sont devenus copains.
+`);
+  });
+});
+
+describe("Animals", () => {
+  xit("verse 7", () => {
+   expect(AnimalsSong().verse(3)).toEqual(`7 petit lapin blanc sautant sur le chemin 
+rencontrent 1 autre petit lapin blanc
+8 doigts avec mes mains, pour compter les petis lapins blancs.
+`);
+  });
+});
+
+describe("Animals", () => {
+  xit("verse 7", () => {
+   expect(AnimalsSong().verse(3)).toEqual(`7 petit lapin blanc sautant sur le chemin 
+rencontrent 1 autre petit lapin blanc
+8 doigts avec mes mains, pour compter les petis lapins blancs.
+`);
+  });
+});
+
+
+Version 1 = (
+  verse(number) {
+      return `${number} petit${number > 1 ? "s" : ""} lapin${
+        number > 1 ? "s" : ""
+      } blanc${number > 1 ? "s" : ""} sautant sur le chemin 
+rencontre${number > 1 ? "nt" : ""} 1 autre petit lapin blanc
+${
+  number === 7
+    ? "8 doigts avec mes mains, pour compter les petis lapins blancs."
+    : `${number + 1} petits lapins blancs sont devenus copains.`
+}
+`;
+    },
+)
+
+
+VERSION 2
+
+(
+  return {
+    verse(number) {
+      switch (number) {
+//         case 1:
+//           return `1 ${size(number)} ${animal(number)} ${color(number)} sautant sur le chemin 
+// ${action(number)} 1 autre ${size(1)} ${animal(1)} ${color(1)}
+// 2 ${size(number + 1)} ${animal(number + 1)} ${color(number + 1)} sont devenus copains.
+// `;
+        case 7:
+          return `${number} ${size(number)} ${animal(number)} ${color(number)} sautant sur le chemin 
+${action(number)} 1 autre ${size(1)} ${animal(1)} ${color(1)}
+${conclusion(number)}
+`;
+        default:
+          return `${number} ${size(number)} ${animal(number)} ${color(number)} sautant sur le chemin 
+${action(number)} 1 autre ${size(1)} ${animal(1)} ${color(1)}
+${number + 1} ${size(number + 1)} ${animal(number + 1)} ${color(number + 1)} sont devenus copains.
+`;
+      }
+    },
+)
+
+Challange
+1. Le 3ème verse, on remplace le lapin par crapauds. => ok
+2. Le 5ème verse, on remplace la couleur blanc par marron => ok
+3. Le 6ème verse, on remplace le lapin par oiseaux et sautant sur le chemin par volant au dessus du chemin.
