@@ -8,7 +8,7 @@ C'est un un code qui répond aux besoins fonctionnels, compréhensible, ouvert a
 # Getting Started
 
 ```bash
-$ git clone https://github.com/hassanrobleh/kata_clean-code.git
+$ git clone 
 $ cd Kata_clean-code
 $ npm install
 $ npm run test
